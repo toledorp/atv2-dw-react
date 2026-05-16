@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ["www.superherodb.com"], // adiciona aqui os domínios de imagens externos
+  },
 };
 
 export default nextConfig;
