@@ -2,7 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["www.superherodb.com"], // adiciona aqui os domínios de imagens externos
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.superherodb.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

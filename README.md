@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SuperHero Finder
 
-## Getting Started
+Projeto desenvolvido em React com Next.js para consumir a API de SuperHeróis.
 
-First, run the development server:
+---
+
+## Funcionalidades
+
+- Busca de super-heróis pelo nome.
+- Exibição de imagem, inteligência e força de cada herói.
+- Layout responsivo e organizado em cards.
+- Uso de componente `SearchBar` para pesquisa e componente `HeroCard` para exibir informações do herói.
+
+---
+
+## Visualização
+
+![SuperHero Finder](./images/screenshot.png)
+
+*A captura acima mostra a aplicação em funcionamento, exibindo os heróis em cards.*
+
+---
+
+## Como Rodar
+
+1. Clone o repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/seu-usuario/atv2-dw-react.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2 . Entre na pasta do projeto
+cd atv2-dw-react
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Instale as dependências
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Rode a aplicação
+npm run start
 
-## Learn More
+5. Aba o navegador para visualização em
+http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+Digigte um nome de super heroi e tecle em buscar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Estruturado projeto
+atv2-dw-react/
+├─ app/
+│  ├─ api/search/route.ts      # Rota API para buscar heróis
+│  ├─ layout.tsx               # Layout principal do projeto
+│  └─ page.tsx                 # Página inicial com barra de busca e exibição de heróis
+├─ components/
+│  ├─ HeroCard.tsx             # Componente que exibe cada herói
+│  └─ SearchBar.tsx            # Componente de input e botão de busca
+├─ styles/
+│  ├─ globals.css              # Estilos globais
+│  └─ HeroCard.module.css      # Estilos específicos do HeroCard
+├─ images/
+│  └─ screenshot.png           # Captura de tela da aplicação
+├─ package.json                # Dependências e scripts
+├─ next.config.ts              # Configuração do Next.js
+└─ README.md                   # Este arquivo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tecnologias Utilizadas
+    React 18
+    Next.js 16 (Turbopack)
+    TypeScript
+    Axios
+    CSS Modules
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Autor
+    Rogerio Pupo Toledo
+    Desenvolvido como atividade prática da disciplina de Desenvolvimento Web (DW3).
